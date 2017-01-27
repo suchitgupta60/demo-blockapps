@@ -1,0 +1,23 @@
+admin:
+  name: adomino
+  password: password
+store:
+  items:
+    - serial: '001'
+      name: JetSki
+      price: 54800
+      desc: Like a bike for the lake
+      imageUrls:
+        - http://blockapps.net/images/header_logo.png?1_1
+        - http://blockapps.net/images/header_logo.png?1_2
+        - http://blockapps.net/images/header_logo.png?1_3
+        - http://blockapps.net/images/header_logo.png?1_4
+    - serial: '002'
+      name: Floor Fan
+      price: 5678
+      desc: Cool you off
+      imageUrls:
+        - http://blockapps.net/images/header_logo.png?2_1
+        - http://blockapps.net/images/header_logo.png?2_2
+        - http://blockapps.net/images/header_logo.png?2_3
+        - http://blockapps.net/images/header_logo.png?2_4

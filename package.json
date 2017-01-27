@@ -1,0 +1,34 @@
+{
+  "name": "Demo App",
+  "version": "1.0.1",
+  "description": "BlockApps REST Demo App",
+  "main": "demoapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "apidoc -i server/api/v1/ -o doc/ && nodemon server/server.js",
+    "start:back": "node server/server.js > stdout.txt 2> stderr.txt &",
+    "deploy": "cp config/$NODE.config.yaml config.yaml && ./node_modules/mocha/bin/mocha lib/deploy.test.js -b && ./node_modules/mocha/bin/mocha lib/test/setup.test.js && cp config/$NODE.deploy.yaml deploy.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockapps/blockapps-rest-demo.git"
+  },
+  "author": "lior@blockapps.net",
+  "license": "ISC",
+  "bugs": {
+    "url": "http://forum.blockapps.net"
+  },
+  "homepage": "https://github.com/blockapps/blockapps-rest-demo#readme",
+  "dependencies": {
+    "blockapps-rest": "git+https://github.com/blockapps/blockapps-rest#develop",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.16.1",
+    "chai": "^3.2.0",
+    "chai-http": "^1.0.0",
+    "mocha": "^3.0.2"
+  }
+}
