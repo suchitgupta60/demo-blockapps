@@ -1,0 +1,5 @@
+url: 'http://tester7.centralus.cloudapp.azure.com/bloc'
+adminName: Admin_16880_731113805
+adminPassword: '1234'
+AdminInterface:
+  address: f5b73c2fb3178a1622bd759b420e0fd3105a3303
