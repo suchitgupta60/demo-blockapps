@@ -1,5 +1,5 @@
 {
-  "name": "Demo App",
+  "name": "demo",
   "version": "1.0.1",
   "description": "BlockApps REST Demo App",
   "main": "demoapp.js",
